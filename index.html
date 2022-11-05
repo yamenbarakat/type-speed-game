@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Little Lemon restaurant.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Open+Sans&family=Roboto&family=Ubuntu:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/573f5d3782.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- game container -->
+    <div class="game-container">
+      <!-- header -->
+      <header>
+        <h1>Typing Speed Test Game</h1>
+      </header>
+
+      <!-- main -->
+      <main>
+        <!-- info -->
+        <div class="info">
+          You are playing on {<span class="level">Normal</span>} level and you
+          have {<span class="secnds">4</span>} seconds to type the word
+        </div>
+
+        <!-- choose-level -->
+        <div class="choose-level">
+          <label for="level">Choose Level:</label>
+          <select name="levels" id="level">
+            <option value="Easy">Easy</option>
+            <option value="Normal" selected>Normal</option>
+            <option value="Hard">Hard</option>
+          </select>
+        </div>
+
+        <!-- choose-lang -->
+        <div class="choose-lang">
+          <label for="lang">Choose Language:</label>
+          <select name="levels" id="lang">
+            <option value="english" selected>English</option>
+            <option value="arabic">Arabic</option>
+          </select>
+        </div>
+
+        <!-- start-game -->
+        <div class="start-game">Start The Game</div>
+
+        <!-- show-word -->
+        <div class="show-word hide"></div>
+        <!-- result -->
+        <div class="result hide"></div>
+
+        <!-- type inout -->
+        <div class="type">
+          <input type="text" />
+        </div>
+
+        <!-- words -->
+        <ul class="words hide"></ul>
+
+        <!-- timer and score -->
+        <div class="timer-socre">
+          <div class="timer">Timer Left: <span>4</span> Seconds</div>
+          <div class="score">
+            Score: <span class="typed-words">0</span> From
+            <span class="total-words"></span>
+          </div>
+        </div>
+
+        <!-- try-again -->
+        <div class="try-again hide">Try Again</div>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
