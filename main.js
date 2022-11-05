@@ -174,7 +174,7 @@ function startTimer() {
 
 function checkWord() {
   // if the word didn't match stop the function an show game over
-  if (showWord.textContent !== typingInput.value) {
+  if (showWord.textContent !== typingInput.value.toLowerCase()) {
     result.classList.remove("hide");
     result.textContent = "Game Over";
 
