@@ -4,7 +4,7 @@
 
 :root {
   --first-color: #a50104;
-  --secnd-color: #fff;
+  --second-color: #fff;
   --third-color: #fcba04;
 }
 
@@ -13,7 +13,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*** Global */
 header h1,
 .info,
 .choose-level,
@@ -30,10 +29,10 @@ header h1,
 .choose-level,
 .choose-lang,
 .start-game,
-.timer-socre,
+.timer-score,
 .try-again {
   background-color: var(--first-color);
-  color: var(--secnd-color);
+  color: var(--second-color);
 }
 
 .info,
@@ -42,7 +41,7 @@ header h1,
 .start-game,
 .show-word,
 .words,
-.timer-socre,
+.timer-score,
 .result,
 .try-again {
   margin: 10px 0;
@@ -54,36 +53,34 @@ header h1,
 .choose-lang select,
 .start-game,
 .info span,
-.timer-socre span,
+.timer-score span,
 .try-again {
   font-weight: bold;
 }
 
-/*** game conatienr */
 .game-container {
   background-color: #ddd;
   min-height: 100vh;
 }
 
-/*** header */
 header h1 {
   margin: 0;
 }
 
-/*** main */
 main {
   max-width: 800px;
   margin: auto;
 }
 
 .info {
-  background-color: var(--secnd-color);
+  background-color: var(--second-color);
   color: var(--first-color);
   line-height: 1.6;
+  font-size: 18px;
 }
 
 .info span {
-  color: var(--third-color);
+  color: #e23a3e;
 }
 
 .choose-level select,
@@ -102,7 +99,11 @@ main {
 
 .start-game,
 .try-again {
+  border: 0;
+  width: 100%;
+  display: block;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .show-word,
@@ -136,32 +137,22 @@ main {
   padding: 8px;
   background-color: var(--first-color);
   border-radius: 6px;
-  color: var(--secnd-color);
+  color: var(--second-color);
   margin: 5px;
 }
 
-.timer-socre {
+.timer-score {
   padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.timer-socre span {
+.timer-score span {
   color: var(--third-color);
 }
 
-/*** frame work */
-
 .hide {
   display: none;
-}
-
-.win {
-  color: green;
-}
-
-.lose {
-  color: red;
 }
 
 @media (max-width: 440px) {
@@ -169,7 +160,7 @@ main {
     font-size: 22px;
   }
 
-  .timer-socre {
+  .timer-score {
     font-size: 12px;
   }
 }
